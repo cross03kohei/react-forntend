@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import ListEmployeeComponent from './components/ListEmployeeComponent';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
+import CreateEmployeeComponent from './components/CreateEmployeeComponent';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <div className='container'>
         <Routes>
           <Route path='/' element={<ListEmployeeComponent />} />
-          <Route path='/employee' element={<ListEmployeeComponent />} />
+          <Route path='/employees' element={<ListEmployeeComponent />} />
+          <Route path='/add-employee' element={<CreateEmployeeComponent />} />
         </Routes>
         </div>
         <FooterComponent />
